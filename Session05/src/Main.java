@@ -150,7 +150,7 @@ public class Main {
         String[] words = input.trim().split("\\s+");
 
         // Dùng StringBuilder để nối chuỗi hiệu quả hơn
-        StringBuilder sb = new StringBuilder();
+         StringBuilder sb = new StringBuilder();
 
         // Duyệt mảng từ cuối về đầu
         for (int i = words.length - 1; i >= 0; i--) {
