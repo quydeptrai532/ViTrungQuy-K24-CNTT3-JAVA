@@ -59,7 +59,7 @@ public class KT {
         }
     }
 
-    // Chuc nang 1
+    //Chuc nang 1
     static int insertStudents(Student[] arr, int count) {
         System.out.print("Nhap so luong sinh vien: ");
         int n = sc.nextInt();
@@ -98,7 +98,7 @@ public class KT {
         return true;
     }
 
-    // Chuc nang 2
+    //Chuc nang 2
     static void displayStudents(Student[] arr,int count){
         if(count == 0){
             System.out.println("Danh sach rong");
@@ -109,7 +109,7 @@ public class KT {
         }
     }
 
-    // ===== Chuc nang 3 =====
+    //Chuc nang 3
     static void findStudent(Student[] arr, int count) {
         System.out.print("Nhap hoc luc can tim (Gioi/Kha/Trung Binh): ");
         String rank = sc.nextLine();
@@ -127,7 +127,7 @@ public class KT {
         }
     }
 
-    // ===== Chuc nang 4 =====
+    //Chuc nang 4
     static void bubleSort(Student[] arr, int count) {
         for (int i = 0; i < count - 1; i++) {
             for (int j = i + 1; j < count; j++) {
@@ -163,6 +163,7 @@ public class KT {
                     count = insertStudents(students, count);
                     break;
                 case 2:
+                    displayStudents(students, count);
                     break;
                 case 3:
                     findStudent(students, count);
