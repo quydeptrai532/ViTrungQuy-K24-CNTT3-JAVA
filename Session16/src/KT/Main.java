@@ -13,12 +13,12 @@ public class Main {
         newPro.add(new FoodProduct("F01", "Milk", 30000, 10));
         newPro.add(new FoodProduct("F02", "Bread", 20000, 5));
 
-        System.out.println("DANH SACH SAN PHAM ");
+        System.out.println("Danh sach san pham ");
         for (Product p : newPro.findAll()) {
             p.displayInfo();
             System.out.println(" | Thanh tien: " + p.caculateFinalPrice());
         }
-        System.out.println("\n TIM SAN PHAM E01 ");
+        System.out.println("\n Tim san pham E01 ");
         Product found = newPro.findById("E01");
         if (found != null) {
             found.displayInfo();
@@ -27,7 +27,7 @@ public class Main {
             System.out.println("Khong tim thay");
         }
 
-        System.out.println("\nSAP XEP THEO GIA TANG DAN ");
+        System.out.println("\nSap xep theo gia tang dan ");
 
         List<Product> list = newPro.findAll();
         Collections.sort(list, Comparator.comparingDouble(Product::getPrice));
@@ -37,7 +37,7 @@ public class Main {
             System.out.println(" | Thanh tien: " + p.caculateFinalPrice());
         }
 
-        System.out.println("\nTHONG KE ");
+        System.out.println("\nThong ke ");
 
         int electronicCount = 0;
         int foodCount = 0;
